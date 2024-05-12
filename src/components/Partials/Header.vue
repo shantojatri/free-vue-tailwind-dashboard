@@ -2,7 +2,7 @@
 
 <template>
   <header
-    class="w-[calc(100%-16rem)] border-b border-gray-200 ml-[16rem] h-[4rem] fixed top-0 z-50"
+    class="w-[calc(100%-16rem)] border-b border-gray-200 ml-[16rem] h-[4rem] fixed top-0 z-50 shadow-md"
   >
     <div
       class="flex items-center bg-gray-50 justify-between px-5 text-gray-700"
@@ -38,7 +38,7 @@
             <i class="ri-message-2-line ri-lg"></i>
           </a>
         </li>
-        <div>
+        <div class="mx-2">
           <a href="#" class="flex gap-x-2">
             <div>
               <h4 class="text-sm font-semibold">John Doe</h4>
