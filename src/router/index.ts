@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
+// import Dashboard from '../views/Dashboard.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,10 +21,9 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     // always scroll to top
     return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        console.log("asfdawdfawd")
+      setTimeout(() => { 
         resolve({ left: 0, top: 5, behavior: 'smooth' })
-      }, 1000)
+      }, 500)
     }) 
   },
 })
