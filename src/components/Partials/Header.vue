@@ -17,7 +17,7 @@ import ThemeDropdown from "../Common/ThemeDropdown.vue";
           <i class="ri-menu-2-fill ri-lg"></i>
         </div>
         <div
-          class="border border-gray-300 rounded overflow-hidden flex items-center px-2"
+          class="border border-gray-300 rounded overflow-hidden items-center px-2 hidden md:flex"
         >
           <i class="ri-search-line ri-lg pr-2"></i>
           <input

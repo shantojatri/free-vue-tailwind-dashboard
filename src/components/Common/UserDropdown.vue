@@ -22,7 +22,7 @@ const logoutHandler = () => {
       class="flex gap-x-2"
       @click.prevent="dropdownStatus = !dropdownStatus"
     >
-      <div>
+      <div class="hidden md:block">
         <h4 class="text-sm font-semibold">John Doe</h4>
         <p class="text-xs">Admin</p>
       </div>

@@ -12,7 +12,7 @@ import Header from "../components/Partials/Header.vue";
 
     <!-- Content Start-->
     <div
-      class="relative overflow-y-auto overflow-x-hidden w-[calc(100%-16rem)] ml-[16rem]"
+      class="relative overflow-y-auto overflow-x-hidden w-full lg:w-[calc(100%-16rem)] ml-0 lg:ml-[16rem] pb-7 md:pb-0"
     >
       <!-- Header Start-->
       <Header />

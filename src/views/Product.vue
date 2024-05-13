@@ -4,8 +4,23 @@ import MainLayout from "@/layouts/MainLayout.vue";
 
 <template>
   <MainLayout>
+    <!-- Breadcrumb -->
+    <div class="flex justify-between items-center bg-slate-50 my-5 p-4">
+      <h2 class="text-md">Products</h2>
+      <ul class="flex text-sm">
+        <i class="ri-home-4-line mr-1"></i>
+        <li>Home</li>
+        <i class="ri-arrow-right-s-line mx-1"></i>
+        <li>
+          <a href="#" class="text-indigo-600">
+            Products
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div>
-      <div class="bg-gray-50 p-7 my-8 shadow-lg rounded-md">
+      <div class="card p-7 my-8">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta
         dolorem harum soluta eveniet sequi architecto mollitia aliquid assumenda
         cum, cupiditate non sunt quidem facilis delectus in deleniti sit!

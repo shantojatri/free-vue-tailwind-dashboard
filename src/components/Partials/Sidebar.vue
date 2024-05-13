@@ -24,7 +24,7 @@ const logoutHandler = () =>{
 </script>
 
 <template>
-  <aside class="absolute left-0 top-0 z-50 h-screen w-64 flex flex-col overflow-y-hidden border-r bg-gray-50 border-gray-200">
+  <aside class="absolute left-0 top-0 z-50 h-screen w-64 flex-col overflow-y-hidden border-r bg-gray-50 border-gray-200 hidden lg:flex">
     <div class="py-4 px-10">
       <div>
         <img
