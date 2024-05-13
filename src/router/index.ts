@@ -9,12 +9,18 @@ const router = createRouter({
       path: '/',
       name: 'dashboard',
       // component: Dashboard,
-      component: () => import('../views/Dashboard.vue')
+      component: () => import('../views/Dashboard.vue'),
+      meta: {
+        title: 'Dashboard',
+      }
     },
     {
       path: '/products',
       name: 'products', 
-      component: () => import('../views/Product.vue')
+      component: () => import('../views/Product.vue'),
+      meta: {
+        title: 'Products',
+      }
     }
   ],
 
@@ -25,7 +31,12 @@ const router = createRouter({
         resolve({ left: 0, top: 5, behavior: 'smooth' })
       }, 500)
     }) 
-  },
+  },  
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = `${to.meta.title} | T-Dashboard`
+  next()
 })
 
 export default router

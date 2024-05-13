@@ -11,6 +11,6 @@
 
 @layer base {
   body {
-    @apply relative z-10 bg-gray-100 text-gray-900 font-poppins text-base font-normal;
+    @apply relative z-10 bg-gray-200 dark:bg-zinc-900 text-gray-900 font-poppins text-base font-normal;
   }
 }

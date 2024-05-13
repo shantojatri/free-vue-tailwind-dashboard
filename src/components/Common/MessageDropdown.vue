@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { ref } from "vue";
-
+import { onClickOutside } from "@vueuse/core";
 import User1 from "../../assets/images/users/user-01.png";
 import User2 from "../../assets/images/users/user-02.png";
 import User3 from "../../assets/images/users/user-03.png";
 import User5 from "../../assets/images/users/user-05.png";
+
+const target = ref(null);
+const dropdownStatus = ref(false);
+
+onClickOutside(target, () => {
+  dropdownStatus.value = false;
+});
 
 const messages = ref([
   {
@@ -59,14 +66,15 @@ const messages = ref([
 </script>
 
 <template>
-  <li class="relative">
-    <a href="#">
+  <li class="relative" ref="target">
+    <a href="#" @click.prevent="dropdownStatus = !dropdownStatus">
       <i class="ri-message-2-line ri-lg"></i>
     </a>
 
     <!-- Dropdown  -->
     <div
-      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white hidden"
+      v-show="dropdownStatus"
+      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white"
     >
       <div class="px-5 py-3">
         <h5>Messages</h5>
