@@ -1,5 +1,13 @@
 <script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
 import { ref } from "vue";
+
+const target = ref(null);
+const dropdownStatus = ref(false);
+
+onClickOutside(target, () => {
+  dropdownStatus.value = false;
+});
 
 const notifications = ref([
   {
@@ -56,14 +64,15 @@ const notifications = ref([
 </script>
 
 <template>
-  <li class="relative">
-    <a href="#">
+  <li class="relative" ref="target">
+    <a href="#" @click.prevent="dropdownStatus = !dropdownStatus">
       <i class="ri-notification-4-line ri-lg"></i>
     </a>
 
     <!-- Dropdown  -->
     <div
-      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white hidden"
+      v-show="dropdownStatus"
+      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white"
     >
       <div class="px-5 py-3">
         <h5>Notifications</h5>

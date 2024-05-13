@@ -20,9 +20,9 @@ import Header from "./components/Partials/Header.vue";
       <Header />
       <!-- Header Ends /.-->
       <main>
-        <div class="mx-auto w-full bg-gray-100">
+        <div class="mx-auto w-full">
           <!-- Content Start-->
-          <div class="py-4 px-8 min-h-screen">
+          <div class="py-4 px-8">
             <RouterView />
           </div>
           <!-- Content Ends /.-->

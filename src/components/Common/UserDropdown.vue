@@ -1,5 +1,14 @@
-<script setup lang="ts"> 
+<script setup lang="ts">
+import { onClickOutside } from "@vueuse/core";
+import { ref } from "vue";
 import User1 from "../../assets/images/users/user-01.png";
+
+const target = ref(null);
+const dropdownStatus = ref(false);
+
+onClickOutside(target, () => { 
+  dropdownStatus.value = false;
+});
 
 const logoutHandler = () => {
   console.log("Logout from profile area");
@@ -7,8 +16,12 @@ const logoutHandler = () => {
 </script>
 
 <template>
-  <div class="mx-2 relative">
-    <a href="#" class="flex gap-x-2">
+  <div class="mx-2 relative" ref="target">
+    <a
+      href="#"
+      class="flex gap-x-2"
+      @click.prevent="dropdownStatus = !dropdownStatus"
+    >
       <div>
         <h4 class="text-sm font-semibold">John Doe</h4>
         <p class="text-xs">Admin</p>
@@ -18,7 +31,8 @@ const logoutHandler = () => {
 
     <!-- Dropdown  -->
     <div
-      class="absolute -right-[.25rem] mt-[.75rem] flex h-[11rem] w-[230px] flex-col rounded-sm border border-stroke bg-white hidden"
+      v-show="dropdownStatus"
+      class="absolute -right-[.25rem] mt-[.75rem] flex h-[11rem] w-[230px] flex-col rounded-sm border border-stroke bg-white"
     >
       <ul class="flex h-auto flex-col overflow-y-auto py-1">
         <!-- Messages -->
