@@ -5,7 +5,7 @@ import MainLayout from "@/layouts/MainLayout.vue";
 <template>
   <MainLayout>
     <!-- Breadcrumb -->
-    <div class="flex justify-between items-center bg-slate-50 my-5 p-4">
+    <div class="flex justify-between items-center bg-gray-50 my-5 p-4">
       <h2 class="text-md">Products</h2>
       <ul class="flex text-sm">
         <i class="ri-home-4-line mr-1"></i>

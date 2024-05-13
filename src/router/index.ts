@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-// import Dashboard from '../views/Dashboard.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,7 +7,6 @@ const router = createRouter({
     {
       path: '/',
       name: 'dashboard',
-      // component: Dashboard,
       component: () => import('../views/Dashboard.vue'),
       meta: {
         title: 'Dashboard',
@@ -21,7 +19,39 @@ const router = createRouter({
       meta: {
         title: 'Products',
       }
-    }
+    },
+    {
+      path: '/profile',
+      name: 'profile', 
+      component: () => import('../views/Profile.vue'),
+      meta: {
+        title: 'Profile',
+      }
+    },
+    {
+      path: '/table',
+      name: 'table', 
+      component: () => import('../views/Table.vue'),
+      meta: {
+        title: 'Table',
+      }
+    },
+    {
+      path: '/settings',
+      name: 'settings', 
+      component: () => import('../views/pages/Settings.vue'),
+      meta: {
+        title: 'Settings',
+      }
+    },
+    {
+      path: '/team',
+      name: 'team', 
+      component: () => import('../views/pages/Team.vue'),
+      meta: {
+        title: 'Team',
+      }
+    },
   ],
 
   scrollBehavior(to, from, savedPosition) {

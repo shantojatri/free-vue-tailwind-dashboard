@@ -6,15 +6,14 @@ const sidebarMenus = ref([
   [
     { name: "Dashboard", icon: "ri-dashboard-line", url: "/"},
     { name: "Products", icon: "ri-shopping-bag-line", url: "/products"},
-    { name: "Analytics", icon: "ri-line-chart-line", url: "#"},
-    { name: "Schedule", icon: "ri-calendar-schedule-line", url: "#" },
-    { name: "Payout", icon: "ri-secure-payment-line", url: "#" },
-    { name: "Statement", icon: "ri-bar-chart-box-line", url: "#" },
+    { name: "Profile", icon: "ri-line-chart-line", url: "/profile"},
+    { name: "Table", icon: "ri-calendar-schedule-line", url: "/table" },
+    { name: "Team", icon: "ri-secure-payment-line", url: "/team" },
+    { name: "Settings", icon: "ri-bar-chart-box-line", url: "/settings" },
   ],
   [
     { name: "Help", icon: "ri-questionnaire-line", url: "#" },
-    { name: "Settings", icon: "ri-settings-5-line", url: "#" },
-    { name: "Logout", icon: "ri-logout-circle-r-line"},
+    { name: "Authentication", icon: "ri-logout-circle-r-line", url: "#" }, 
   ],
 ]);
 
