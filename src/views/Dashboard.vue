@@ -2,7 +2,7 @@
 
 <template> 
   <div>
-    <div class="bg-gray-50 p-4 my-8 shadow-lg rounded-md">
+    <div class="bg-gray-50 p-7 my-8 shadow-lg rounded-md">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta
       dolorem harum soluta eveniet sequi architecto mollitia aliquid assumenda
       cum, cupiditate non sunt quidem facilis delectus in deleniti sit! Facere,
@@ -59,7 +59,7 @@
       rem?
     </div>
 
-    <div class="bg-gray-50 p-4 my-8 shadow-lg rounded-md">
+    <div class="bg-gray-50 p-7 my-8 shadow-lg rounded-md">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta
       dolorem harum soluta eveniet sequi architecto mollitia aliquid assumenda
       cum, cupiditate non sunt quidem facilis delectus in deleniti sit! Facere,
@@ -116,7 +116,7 @@
       rem?
     </div>
 
-    <div class="bg-gray-50 p-4 my-8 shadow-lg rounded-md">
+    <div class="bg-gray-50 p-7 my-8 shadow-lg rounded-md">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo dicta
       dolorem harum soluta eveniet sequi architecto mollitia aliquid assumenda
       cum, cupiditate non sunt quidem facilis delectus in deleniti sit! Facere,

@@ -6,28 +6,29 @@ import Header from "./components/Partials/Header.vue";
 
 <template>
   <div
-    class="w-full min-h-screen font-poppins text-gray-900 bg-gray-50 relative overflow-hidden"
+    class="flex h-screen overflow-hidden"
   >
     <!-- Sidebar Start-->
     <Sidebar />
     <!-- Sidebar Ends /.-->
 
-    <!-- Header Start-->
-    <Header />
-    <!-- Header Ends /.-->
-
-    <!-- Main Start-->
-    <main
-      class="w-[calc(100%-16rem)] min-h-screen ml-[16rem] relative overflow-auto z-10"
+    <!-- Content Start-->
+    <div
+      class="relative overflow-y-auto overflow-x-hidden w-[calc(100%-16rem)] ml-[16rem]"
     >
-      <div class="w-full min-h-screen bg-gray-100 absolute mt-[4rem]">
-        <!-- Content Start-->
-        <div class="m-7">
-          <RouterView />
+      <!-- Header Start-->
+      <Header />
+      <!-- Header Ends /.-->
+      <main>
+        <div class="mx-auto w-full bg-gray-100">
+          <!-- Content Start-->
+          <div class="py-4 px-8 min-h-screen">
+            <RouterView />
+          </div>
+          <!-- Content Ends /.-->
         </div>
-        <!-- Content Ends /.-->
-      </div>
-    </main>
-    <!-- Main Ends /.-->
+      </main>
+    </div>
+    <!-- Content Ends /.-->
   </div>
 </template>

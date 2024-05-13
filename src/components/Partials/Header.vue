@@ -2,10 +2,10 @@
 
 <template>
   <header
-    class="w-[calc(100%-16rem)] border-b border-gray-200 ml-[16rem] h-[4rem] fixed top-0 z-50 shadow-md"
+    class="sticky top-0 z-999 flex w-full bg-white shadow-md"
   >
     <div
-      class="flex items-center bg-gray-50 justify-between px-5 text-gray-700"
+      class="flex flex-1 items-center bg-gray-50 justify-between px-5 text-gray-700"
     >
       <div class="flex gap-x-3 items-center">
         <div>
