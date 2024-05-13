@@ -28,15 +28,141 @@
             <i class="ri-sun-line ri-lg"></i>
           </a>
         </li>
-        <li>
+        <li class="relative">
           <a href="#">
             <i class="ri-notification-4-line ri-lg"></i>
           </a>
+
+          <!-- Dropdown  -->
+          <div class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white hidden">
+            <div class="px-5 py-3">
+              <h5>Notifications</h5>
+            </div>
+            <ul class="flex h-auto flex-col overflow-y-auto">
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+            </ul>
+          </div>
         </li>
-        <li>
+        <li class="relative">
           <a href="#">
             <i class="ri-message-2-line ri-lg"></i>
           </a>
+
+          <!-- Dropdown  -->
+          <div class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white">
+            <div class="px-5 py-3">
+              <h5>Messages</h5>
+            </div>
+            <ul class="flex h-auto flex-col overflow-y-auto">
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+              <li>
+                <a href="#" class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs">
+                  <p class="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam delectus eius mollitia rem ipsum beatae quos, iste magnam recusandae non.</p>
+                  <p class="text-gray-400">12 July, 2024</p>
+                </a>
+              </li> 
+            </ul>
+          </div>
         </li>
         <div class="mx-2">
           <a href="#" class="flex gap-x-2">
