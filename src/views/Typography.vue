@@ -6,14 +6,14 @@ import MainLayout from "@/layouts/MainLayout.vue";
   <MainLayout>
     <!-- Breadcrumb -->
     <div class="flex justify-between items-center bg-gray-50 p-4 mb-7">
-      <h2 class="text-md">Products</h2>
+      <h2 class="text-md">Typography</h2>
       <ul class="flex text-sm">
         <i class="ri-home-4-line mr-1"></i>
         <li>Home</li>
         <i class="ri-arrow-right-s-line mx-1"></i>
         <li>
           <a href="#" class="text-indigo-600">
-            Products
+            Typography
           </a>
         </li>
       </ul>

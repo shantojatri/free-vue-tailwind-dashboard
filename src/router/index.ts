@@ -13,43 +13,19 @@ const router = createRouter({
       }
     },
     {
-      path: '/products',
-      name: 'products', 
-      component: () => import('../views/Product.vue'),
-      meta: {
-        title: 'Products',
-      }
-    },
-    {
-      path: '/profile',
-      name: 'profile', 
-      component: () => import('../views/Profile.vue'),
-      meta: {
-        title: 'Profile',
-      }
-    },
-    {
-      path: '/table',
-      name: 'table', 
+      path: '/tables',
+      name: 'tables', 
       component: () => import('../views/Table.vue'),
       meta: {
-        title: 'Table',
+        title: 'Tables',
       }
-    },
+    },    
     {
-      path: '/settings',
-      name: 'settings', 
-      component: () => import('../views/pages/Settings.vue'),
+      path: '/charts',
+      name: 'charts', 
+      component: () => import('../views/Chart.vue'),
       meta: {
-        title: 'Settings',
-      }
-    },
-    {
-      path: '/team',
-      name: 'team', 
-      component: () => import('../views/pages/Team.vue'),
-      meta: {
-        title: 'Team',
+        title: 'Charts',
       }
     },
     {
@@ -58,6 +34,46 @@ const router = createRouter({
       component: () => import('../views/Icon.vue'),
       meta: {
         title: 'Icons',
+      }
+    },
+    {
+      path: '/typography',
+      name: 'typography', 
+      component: () => import('../views/Typography.vue'),
+      meta: {
+        title: 'Typography',
+      }
+    },
+    {
+      path: '/profile',
+      name: 'profile', 
+      component: () => import('../views/users/Profile.vue'),
+      meta: {
+        title: 'Profile',
+      }
+    },  
+    {
+      path: '/update-password',
+      name: 'update-password', 
+      component: () => import('../views/users/UpdatePassword.vue'),
+      meta: {
+        title: 'Update Password',
+      }
+    },  
+    {
+      path: '/settings',
+      name: 'settings', 
+      component: () => import('../views/others/Settings.vue'),
+      meta: {
+        title: 'Settings',
+      }
+    },
+    {
+      path: '/teams',
+      name: 'teams', 
+      component: () => import('../views/others/Team.vue'),
+      meta: {
+        title: 'Teams',
       }
     },
     {
@@ -81,7 +97,7 @@ const router = createRouter({
       name: 'forget-password', 
       component: () => import('../views/auth/ForgetPassword.vue'),
       meta: {
-        title: 'ForgetPassword',
+        title: 'Forget Password',
       }
     },    
   ],
