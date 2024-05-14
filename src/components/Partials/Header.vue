@@ -1,9 +1,8 @@
-<script setup lang="ts"> 
+<script setup lang="ts">
 import UserDropdown from "../Common/UserDropdown.vue";
 import NotificationDropdown from "../Common/NotificationDropdown.vue";
 import MessageDropdown from "../Common/MessageDropdown.vue";
 import ThemeDropdown from "../Common/ThemeDropdown.vue";
-
 </script>
 
 <template>
@@ -13,31 +12,36 @@ import ThemeDropdown from "../Common/ThemeDropdown.vue";
     >
       <!-- Left area -->
       <div class="flex gap-x-3 items-center">
+        <!-- Hamburger Menu Icon -->
         <div>
           <i class="ri-menu-2-fill ri-lg"></i>
         </div>
-        <div
-          class="border border-gray-300 rounded overflow-hidden items-center px-2 hidden md:flex"
-        >
-          <i class="ri-search-line ri-lg pr-2"></i>
-          <input
-            type="text"
-            class="px-4 py-2 border-0"
-            placeholder="Type to search..."
-          />
+
+        <!-- Search Bar -->
+        <div class="px-2 hidden md:flex">
+          <div class="relative w-[20rem]">
+            <div class="absolute inset-y-0 left-0 flex items-center pl-2">
+              <i class="ri-search-line ri-lg pr-2 text-gray-400"></i>
+            </div>
+            <input
+              type="text"
+              class="w-full pl-8 pr-4 py-2 bg-gray-200 text-gray-900 font-light placeholder:text-gray-400 border border-gray-400 rounded focus:outline-none focus:border-gray-900 focus:ring-0"
+              placeholder="Type to search..."
+            />
+          </div>
         </div>
       </div>
 
       <!-- Right area -->
       <ul class="flex gap-x-5 items-center py-3">
         <!-- Dark/Light mood -->
-        <ThemeDropdown/>
+        <ThemeDropdown />
 
         <!-- Notifications -->
-        <NotificationDropdown/>
+        <NotificationDropdown />
 
         <!-- Messages -->
-        <MessageDropdown/>
+        <MessageDropdown />
 
         <!-- User Profile -->
         <UserDropdown />

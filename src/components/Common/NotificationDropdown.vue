@@ -81,7 +81,7 @@ const notifications = ref([
         <li v-for="(notification, index) in notifications" :key="index">
           <a
             href="#"
-            class="flex flex-col gap-2.5 border-t border-stroke px-5 py-3 text-xs"
+            class="flex flex-col gap-2.5 border-t border-stroke px-5 py-2 text-xs"
           >
             <p class="text-justify">
               {{ notification.title }}
