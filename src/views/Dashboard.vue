@@ -1,21 +1,12 @@
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
+import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
 </script>
 
 <template>
   <MainLayout>
     <!-- Breadcrumb -->
-    <div class="flex justify-between items-center bg-gray-50 p-4 mb-7">
-      <h2 class="text-md">Dashboard</h2>
-      <ul class="flex text-sm">
-        <i class="ri-home-4-line mr-1"></i>
-        <li>Home</li>
-        <i class="ri-arrow-right-s-line mx-1"></i>
-        <li>
-          <a href="#" class="text-indigo-600"> Dashboard </a>
-        </li>
-      </ul>
-    </div>
+    <Breadcrumb :items="['Home', 'Dashboard']"/>
 
     <!-- Top Analytics Start -->
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">

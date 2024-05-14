@@ -20,7 +20,7 @@ const themeStore = useThemeStore();
       href="#"
       class="transition ease-out"
     >
-      <i class="ri-moon-fill ri-lg"></i>
+      <i class="ri-moon-line ri-lg"></i>
     </a>
   </li>
 </template>

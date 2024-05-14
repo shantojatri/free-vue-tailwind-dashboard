@@ -145,7 +145,7 @@ const handleChildClick = (submenu: any) => {
       </div>
 
       <!-- Main Menu -->
-      <nav class="">
+      <nav>
         <ul
           v-for="menus in sidebarMenus"
           :key="menus.name"
