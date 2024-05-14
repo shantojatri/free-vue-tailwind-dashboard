@@ -20,7 +20,7 @@ import Header from "../components/Partials/Header.vue";
       <main>
         <div class="mx-auto w-full">
           <!-- Content Start-->
-          <div class="py-4 px-8">
+          <div class="py-6 px-5">
             <slot></slot>
           </div>
           <!-- Content Ends /.-->

@@ -52,6 +52,38 @@ const router = createRouter({
         title: 'Team',
       }
     },
+    {
+      path: '/icons',
+      name: 'icons', 
+      component: () => import('../views/Icon.vue'),
+      meta: {
+        title: 'Icons',
+      }
+    },
+    {
+      path: '/login',
+      name: 'login', 
+      component: () => import('../views/auth/Login.vue'),
+      meta: {
+        title: 'Login',
+      }
+    },
+    {
+      path: '/register',
+      name: 'register', 
+      component: () => import('../views/auth/Register.vue'),
+      meta: {
+        title: 'Register',
+      }
+    },
+    {
+      path: '/forget-password',
+      name: 'forget-password', 
+      component: () => import('../views/auth/ForgetPassword.vue'),
+      meta: {
+        title: 'ForgetPassword',
+      }
+    },    
   ],
 
   scrollBehavior(to, from, savedPosition) {
