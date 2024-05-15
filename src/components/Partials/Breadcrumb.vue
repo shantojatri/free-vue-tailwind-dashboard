@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="flex justify-between items-center bg-gray-50 p-4 mb-7">
+  <div class="flex justify-between items-center bg-gray-50 p-4 mb-7 rounded-md">
     <h2 class="text-md font-medium">{{ items[items.length - 1] }}</h2>
     <ul class="flex text-sm">
       <i class="ri-home-4-line mr-1"></i>
