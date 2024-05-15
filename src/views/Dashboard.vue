@@ -13,11 +13,11 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card p-8">
         <div class="space-y-2">
-          <i class="ri-eye-line ri-3x text-indigo-600"></i>
-          <h2 class="text-xl font-bold">$3.555K</h2>
+          <i class="ri-eye-line ri-3x text-indigo-600 dark:text-indigo-400"></i>
+          <h2 class="text-xl font-bold dark:text-gray-50">$3.555K</h2>
           <div class="flex items-center justify-between text-sm">
-            <p>Total Views</p>
-            <div class="flex text-green-400">
+            <p class="dark:text-gray-400">Total Views</p>
+            <div class="flex text-green-400 dark:text-green-500">
               <p>0.43%</p>
               <i class="ri-arrow-up-line"></i>
             </div>
@@ -28,11 +28,11 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card p-8">
         <div class="space-y-2">
-          <i class="ri-shopping-cart-line ri-3x text-indigo-600"></i>
-          <h2 class="text-xl font-bold">$551K</h2>
+          <i class="ri-shopping-cart-line ri-3x text-indigo-600 dark:text-indigo-400"></i>
+          <h2 class="text-xl font-bold dark:text-gray-50">$551K</h2>
           <div class="flex items-center justify-between text-sm">
-            <p>Total Profits</p>
-            <div class="flex text-green-400">
+            <p class="dark:text-gray-400">Total Profits</p>
+            <div class="flex text-green-400 dark:text-green-500">
               <p>12.75%</p>
               <i class="ri-arrow-up-line"></i>
             </div>
@@ -43,11 +43,11 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card p-8">
         <div class="space-y-2">
-          <i class="ri-shopping-bag-4-line ri-3x text-indigo-600"></i>
-          <h2 class="text-xl font-bold">1600</h2>
+          <i class="ri-shopping-bag-4-line ri-3x text-indigo-600 dark:text-indigo-400"></i>
+          <h2 class="text-xl font-bold dark:text-gray-50">1600</h2>
           <div class="flex items-center justify-between text-sm">
-            <p>Total Products</p>
-            <div class="flex text-red-400">
+            <p class="dark:text-gray-400">Total Products</p>
+            <div class="flex text-red-400 dark:text-red-500">
               <p>0.43%</p>
               <i class="ri-arrow-down-line"></i>
             </div>
@@ -58,11 +58,11 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card p-8">
         <div class="space-y-2">
-          <i class="ri-team-line ri-3x text-indigo-600"></i>
-          <h2 class="text-xl font-bold">51.4K</h2>
+          <i class="ri-team-line ri-3x text-indigo-600 dark:text-indigo-400"></i>
+          <h2 class="text-xl font-bold dark:text-gray-50">51.4K</h2>
           <div class="flex items-center justify-between text-sm">
-            <p>Total Users</p>
-            <div class="flex text-green-400">
+            <p class="dark:text-gray-400">Total Users</p>
+            <div class="flex text-green-400 dark:text-green-500">
               <p>5.12%</p>
               <i class="ri-arrow-up-line"></i>
             </div>
@@ -77,18 +77,18 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card col-span-3 lg:col-span-2 p-5">
         <div class="mb-4">
-          <h2 class="text-lg font-semibold">Top Vendors</h2>
+          <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-50">Top Vendors</h2>
         </div>
         <!-- Table -->
         <div>
           <div class="overflow-x-auto">
             <table
-              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-200"
             >
               <thead
-                class="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400"
+                class="text-xs text-gray-900 dark:text-gray-50 bg-gray-200 dark:bg-neutral-500 uppercase"
               >
-                <tr>
+                <tr class="border-b dark:border-neutral-900">
                   <th scope="col" class="px-6 py-3">Name</th>
                   <th scope="col" class="px-6 py-3">Revenues</th>
                   <th scope="col" class="px-6 py-3">Sales</th>
@@ -97,7 +97,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"
                 >
                   <th
                     scope="row"
@@ -110,7 +110,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
                   <td class="px-6 py-4 text-blue-400">3.2%</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"
                 >
                   <th
                     scope="row"
@@ -122,7 +122,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
                   <td class="px-6 py-4">1120</td>
                   <td class="px-6 py-4 text-blue-400">4.2%</td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800">
+                <tr class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900">
                   <th
                     scope="row"
                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
@@ -142,16 +142,16 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       <!-- Card -->
       <div class="card col-span-3 lg:col-span-1 p-5">
         <div class="mb-4">
-          <h2 class="text-lg font-semibold">Top Products</h2>
+          <h2 class="text-lg font-semibold text-gray-900 dark:text-gray-50">Top Products</h2>
         </div>
         <!-- Table -->
         <div>
           <div class="overflow-x-auto">
             <table
-              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-200"
             >
               <thead
-                class="text-xs text-gray-700 uppercase bg-gray-300 dark:bg-gray-700 dark:text-gray-400"
+                class="text-xs text-gray-900 dark:text-gray-50 bg-gray-200 dark:bg-neutral-500 uppercase"
               >
                 <tr> 
                   <th scope="col" class="px-6 py-3">Name</th>
@@ -161,20 +161,20 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"
                 > 
                   <td class="px-6 py-4">I phone 15 pro</td>
                   <td class="px-6 py-4">Mobile</td>
                   <td class="px-6 py-4">$1299</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"
                 > 
                   <td class="px-6 py-4">Cannon 50D</td>
                   <td class="px-6 py-4">Camera</td>
                   <td class="px-6 py-4">$999</td>
                 </tr>
-                <tr class="bg-white dark:bg-gray-800"> 
+                <tr class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"> 
                   <td class="px-6 py-4">Haier AC 1.5 ton</td>
                   <td class="px-6 py-4">Electronics</td>
                   <td class="px-6 py-4">$99</td>

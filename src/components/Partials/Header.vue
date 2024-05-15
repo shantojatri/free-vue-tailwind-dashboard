@@ -8,7 +8,7 @@ import ThemeDropdown from "../Common/ThemeDropdown.vue";
 <template>
   <header class="sticky top-0 z-999 flex w-full bg-white shadow-md">
     <div
-      class="flex flex-1 items-center bg-gray-50 justify-between px-5 text-gray-700"
+      class="flex flex-1 items-center text-gray-700 dark:text-gray-50 bg-gray-50 dark:bg-neutral-600 justify-between px-5 "
     >
       <!-- Left area -->
       <div class="flex gap-x-3 items-center">
@@ -25,7 +25,7 @@ import ThemeDropdown from "../Common/ThemeDropdown.vue";
             </div>
             <input
               type="text"
-              class="w-full pl-8 pr-4 py-2 bg-gray-200 text-gray-900 font-light placeholder:text-gray-400 border border-gray-400 rounded focus:outline-none focus:border-gray-900 focus:ring-0"
+              class="w-full pl-8 pr-4 py-2 bg-gray-200 dark:bg-neutral-800 text-gray-900 font-light placeholder:text-gray-400 border border-gray-400 dark:border-neutral-800 rounded focus:outline-none focus:border-gray-900 dark:focus:border-neutral-300 focus:ring-0"
               placeholder="Type to search..."
             />
           </div>

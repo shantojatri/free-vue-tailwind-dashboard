@@ -74,7 +74,7 @@ const messages = ref([
     <!-- Dropdown  -->
     <div
       v-show="dropdownStatus"
-      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white"
+      class="absolute -right-[.5rem] mt-[1.25rem] flex h-[25rem] w-[350px] flex-col rounded-sm border border-stroke bg-white dark:bg-neutral-600 dark:border-neutral-900"
     >
       <div class="px-5 py-3">
         <h5>Messages</h5>
@@ -84,7 +84,7 @@ const messages = ref([
         <li v-for="(message, index) in messages" :key="index">
           <a
             href="#"
-            class="flex gap-4 border-t border-stroke px-5 py-3 text-xs"
+            class="flex gap-4 border-t border-stroke dark:border-neutral-900 px-5 py-3 text-xs"
           >
             <div class="w-12 h-12 rounded-full">
               <img :src="message.image" alt="avatar" />

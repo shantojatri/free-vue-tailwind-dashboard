@@ -117,7 +117,7 @@ const handleChildClick = (submenu: any) => {
 
 <template>
   <aside
-    class="absolute left-0 top-0 z-50 h-screen w-64 flex-col overflow-y-hidden border-r bg-gray-50 border-gray-200 hidden lg:flex"
+    class="absolute left-0 top-0 z-50 h-screen w-64 flex-col overflow-y-hidden border-r bg-gray-50 dark:bg-neutral-600 border-gray-200 dark:border-neutral-900 hidden lg:flex"
     ref="target"
   >
     <div class="py-4">
@@ -152,7 +152,9 @@ const handleChildClick = (submenu: any) => {
           class="flex flex-col gap-y-2"
         >
           <!-- Group Label -->
-          <h3 class="text-sm font-medium text-gray-400 px-5 mt-5">
+          <h3
+            class="text-sm font-medium text-gray-400 dark:text-indigo-300 px-5 mt-5"
+          >
             {{ menus.name }}
           </h3>
 
@@ -160,10 +162,11 @@ const handleChildClick = (submenu: any) => {
           <li v-for="(item, key) in menus?.menuItems" :key="key">
             <RouterLink
               :to="item.path"
-              class="flex items-center justify-between text-gray-700 hover:text-indigo-600 group hover:bg-indigo-100 px-7 py-2"
+              class="flex items-center justify-between text-gray-700 dark:text-gray-50 hover:text-indigo-600 hover:dark:text-gray-900 group hover:bg-indigo-100 px-7 py-2"
               @click.prevent="handleParentClick(item)"
               :class="{
-                'bg-indigo-100': sidebarStore.page === item.label,
+                'bg-indigo-100 dark:bg-indigo-200 dark:text-gray-900':
+                  sidebarStore.page === item.label,
               }"
             >
               <div class="flex items-center gap-x-2">
@@ -192,15 +195,15 @@ const handleChildClick = (submenu: any) => {
               v-show="sidebarStore.page === item.label"
             >
               <ul
-                class="flex flex-col pl-1 text-gray-500 border-l border-gray-400"
+                class="flex flex-col pl-1 text-gray-500 dark:text-gray-50 border-l border-gray-400 dark:border-gray-100"
               >
                 <li v-for="(submenu, key) in item?.children" :key="key">
                   <RouterLink
                     :to="submenu.path"
-                    class="inline-block w-full px-4 py-2 text-sm hover:text-indigo-600"
+                    class="inline-block w-full px-4 py-2 text-sm hover:text-indigo-600 dark:hover:text-gray-50"
                     @click.prevent="handleChildClick(submenu)"
                     :class="{
-                      'text-indigo-600':
+                      'text-indigo-600 dark:text-indigo-400':
                         submenu.label === sidebarStore.activatedMenu,
                     }"
                   >
