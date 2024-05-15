@@ -17,8 +17,9 @@ import Header from "../components/Partials/Header.vue";
       <!-- Header Start-->
       <Header />
       <!-- Header Ends /.-->
+
       <main>
-        <div class="mx-auto w-full">
+        <div class="mx-auto w-full mb-3">
           <!-- Content Start-->
           <div class="py-6 px-5">
             <slot></slot>

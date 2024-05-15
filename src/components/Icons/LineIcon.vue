@@ -14,15 +14,17 @@
       <div
         class="flex items-center border border-gray-300 p-3 space-x-1 md:space-x-5 rounded-md"
       >
-        <i class="lni lni-home text-3xl"></i>
-        <i class="lni lni-envelope text-3xl"></i>
-        <i class="lni lni-user text-3xl"></i>
-        <i class="lni lni-map-marker text-3xl"></i>
-        <i class="lni lni-plane text-3xl"></i>
-        <i class="lni lni-wallet text-3xl"></i>
-        <i class="lni lni-checkmark-circle text-3xl"></i>
-        <i class="lni lni-lock text-3xl"></i>
-        <i class="lni lni-warning text-3xl"></i>
+        <p class="text-3xl"><i class="lni lni-home"></i></p>
+        <p class="text-3xl"><i class="lni lni-envelope text-3xl"></i></p>
+        <p class="text-3xl"><i class="lni lni-user text-3xl"></i></p>
+        <p class="text-3xl"><i class="lni lni-map-marker text-3xl"></i></p>
+        <p class="text-3xl"><i class="lni lni-plane text-3xl"></i></p>
+        <p class="text-3xl"><i class="lni lni-wallet text-3xl"></i></p>
+        <p class="text-3xl">
+          <i class="lni lni-checkmark-circle text-3xl"></i>
+        </p>
+        <p class="text-3xl"><i class="lni lni-lock text-3xl"></i></p>
+        <p class="text-3xl"><i class="lni lni-warning text-3xl"></i></p>
       </div>
     </div>
   </div>
