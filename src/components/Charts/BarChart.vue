@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Bar } from "vue-chartjs";
+import { useThemeStore } from "@/stores/theme";
+
 import {
   Chart as ChartJS,
   Title,
@@ -17,6 +19,8 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+const { themeMode } = useThemeStore();
 
 const data = {
   labels: [
@@ -37,12 +41,36 @@ const data = {
     {
       label: "Monthly wise sales report of 2024",
       data: [220, 350, 400, 380, 110, 260, 320, 350, 220, 110, 370, 280],
+      color: "#fff",
       backgroundColor: "#9BD0F5",
-    }
-  ]
+    },
+  ],
 };
+
 const options = {
   responsive: true,
+  plugins: {
+    legend: {
+      labels: {
+        color: themeMode ? "white" : 'black',
+        font: {
+          size: 16,
+        },
+      },
+    },
+  },
+  scales: {
+    x: {
+      ticks: {
+        color: themeMode ? "white" : 'black',
+      },
+    },
+    y: {
+      ticks: {
+        color: themeMode ? "white" : 'black',
+      },
+    },
+  },
 };
 </script>
 

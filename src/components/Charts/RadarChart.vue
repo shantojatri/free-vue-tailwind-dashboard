@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Radar } from "vue-chartjs";
+import { useThemeStore } from "@/stores/theme";
 
 import {
   Chart as ChartJS,
@@ -19,6 +20,8 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
+const { themeMode } = useThemeStore();
 
 const data = {
   labels: [
@@ -50,12 +53,50 @@ const data = {
       pointHoverBackgroundColor: "#fff",
       pointHoverBorderColor: "rgba(255,99,132,1)",
       data: [28, 48, 40, 19, 96, 27, 100],
-    }
-  ]
+    },
+  ],
 };
 const options = {
   responsive: true,
   maintainAspectRatio: false,
+  scales: {
+    r: {
+      pointLabels: {
+        color: themeMode ? "white" : "black",
+        font: {
+          size: 14,
+        },
+      },
+      grid: {
+        color: "black"
+      },
+      angleLines: {
+        color: "gray"
+      },
+      ticks: {
+        color: "black"
+      }
+    },
+  },
+  plugins: {
+    legend: {
+      labels: {
+        color: themeMode ? "white" : "black",
+        font: {
+          size: 16,
+        },
+        padding: 20
+      },
+    },
+    title: {
+      display: true,
+      color: themeMode ? "white" : "black",
+      text: "Comparing Activity Performance",
+      font: {
+        size: 20,
+      },
+    },
+  },
 };
 </script>
 

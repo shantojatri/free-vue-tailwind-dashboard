@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { Line } from "vue-chartjs";
+import { useThemeStore } from "@/stores/theme";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -21,6 +23,8 @@ ChartJS.register(
   Legend
 );
 
+const { themeMode } = useThemeStore();
+
 const data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
@@ -28,18 +32,36 @@ const data = {
       label: "Sales statistics of 2024",
       backgroundColor: "#f87979",
       data: [250, 39, 10, 40, 39, 80, 40],
-    }
-  ]
+    },
+  ],
 };
 const options = {
   responsive: true,
-    maintainAspectRatio: true,
-    scales: {
-            y: {
-                suggestedMin: 50,
-                suggestedMax: 100
-            }
-        }
+  maintainAspectRatio: true,
+  plugins: {
+    legend: {
+      labels: {
+        color: themeMode ? "white" : 'black',
+        font: {
+          size: 16,
+        },
+      },
+    },
+  },
+  scales: {
+    x: {
+      ticks: {
+        color: themeMode ? "white" : 'black',
+      },
+    },
+    y: {
+      suggestedMin: 50,
+      suggestedMax: 100,
+      ticks: {
+        color: themeMode ? "white" : 'black',
+      },
+    },
+  }, 
 };
 </script>
 

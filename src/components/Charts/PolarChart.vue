@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { PolarArea } from "vue-chartjs";
+import { useThemeStore } from "@/stores/theme";
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -9,6 +10,8 @@ import {
 } from "chart.js";
 
 ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend);
+
+const { themeMode } = useThemeStore();
 
 const data = {
   labels: [
@@ -53,6 +56,16 @@ const data = {
 const options = {
   responsive: true,
   maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      labels: {
+        color: themeMode ? "white" : 'black',
+        font: {
+          size: 16,
+        },
+      },
+    },
+  },
 };
 </script>
 

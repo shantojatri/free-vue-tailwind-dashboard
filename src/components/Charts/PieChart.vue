@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Pie } from "vue-chartjs";
+import { useThemeStore } from "@/stores/theme";
+
 ChartJS.register(ArcElement, Tooltip, Legend);
+
+const { themeMode } = useThemeStore();
 
 const data = {
   labels: ["Mobile", "Desktop", "Tablet", "Speaker"],
@@ -15,6 +19,16 @@ const data = {
 const options = {
   responsive: true,
   maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      labels: {
+        color: themeMode ? "white" : 'black',
+        font: {
+          size: 16,
+        },
+      },
+    },
+  }, 
 };
 </script>
 
