@@ -4,6 +4,8 @@ import { onClickOutside } from "@vueuse/core";
 import { RouterLink, useRoute } from "vue-router";
 import { useSidebarStore } from "@/stores/sidebar";
 
+import Tadmin from "../../assets/tadmin.png";
+
 const target = ref(null);
 const sidebarStore = useSidebarStore();
 
@@ -124,8 +126,8 @@ const handleChildClick = (submenu: any) => {
       <div class="px-7">
         <RouterLink to="/">
           <img
-            src="https://ticket.jatri.co/_nuxt/img/jatri-logo.09f7d45.svg"
-            alt="w-28"
+            :src="Tadmin"
+            alt="w-40"
           />
         </RouterLink>
       </div>
