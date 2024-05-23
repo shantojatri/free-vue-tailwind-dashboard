@@ -9,6 +9,8 @@ import StripedColTable from "@/components/Tables/StripedColTable.vue";
 import HoverTable from "@/components/Tables/HoverTable.vue"; 
 import FooterTable from "@/components/Tables/FooterTable.vue"; 
 
+import BasicTableAction from "@/components/Tables/BasicTableAction.vue"; 
+
 const tableHeaders = ref(['ID', 'Product Name', 'Color', 'Category', 'Qty', 'Price']);
 
 const products = ref([
@@ -25,6 +27,8 @@ const products = ref([
     <Breadcrumb :items="['Home', 'Tables']" />
 
     <div class="space-y-8">
+      <BasicTableAction/>
+      
       <!-- Basic Table -->
       <BasicTable :headers="tableHeaders" :products="products"/>
 
