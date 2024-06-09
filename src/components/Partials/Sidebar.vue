@@ -126,8 +126,9 @@ const handleChildClick = (submenu: any) => {
       <div class="px-7">
         <RouterLink to="/">
           <img
+            class="w-[50%]"
             :src="Tadmin"
-            alt="w-40"
+            alt="t-admin"
           />
         </RouterLink>
       </div>
