@@ -14,7 +14,7 @@ import DoughnutChart from "@/components/Charts/DoughnutChart.vue";
     <!-- Breadcrumb -->
     <Breadcrumb :items="['Home', 'Charts']" />
 
-    <div class="grid grid-cols-2 gap-x-10 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
       <div>
         <!-- Bar chart -->
         <BarChart />
@@ -25,7 +25,7 @@ import DoughnutChart from "@/components/Charts/DoughnutChart.vue";
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-x-10 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
       <div>
         <!-- Pie chart -->
         <PieChart />
@@ -36,7 +36,7 @@ import DoughnutChart from "@/components/Charts/DoughnutChart.vue";
       </div>
     </div>
 
-    <div class="grid grid-cols-2 gap-x-10 mt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
       <div>
         <!-- Radar chart -->
         <RadarChart />
