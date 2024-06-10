@@ -92,7 +92,7 @@ const sidebarMenus = ref([
         children: [
           { label: "Login", path: "/login" },
           { label: "Register", path: "/register" },
-          { label: "Forget Password", path: "/forget-password" },
+          { label: "Reset Password", path: "/reset-password" },
         ],
       },
     ],
