@@ -66,7 +66,7 @@ const notifications = ref([
 <template>
   <li class="relative" ref="target">
     <a href="#" @click.prevent="dropdownStatus = !dropdownStatus">
-      <i class="ri-notification-4-line ri-lg"></i>
+      <i class="ri-notification-4-line ri-xl"></i>
     </a>
 
     <!-- Dropdown  -->
@@ -91,5 +91,6 @@ const notifications = ref([
         </li>
       </ul>
     </div>
+    <p class="absolute inline-flex items-center justify-center w-4 h-4 text-[10px] font-normal text-white bg-red-500 rounded-full -top-2 -end-2 dark:border-gray-900">10</p>
   </li>
 </template>

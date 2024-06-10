@@ -12,7 +12,7 @@ const themeStore = useThemeStore();
       href="#"
       class="transition ease-in-out"
     >
-      <i class="ri-sun-line ri-lg"></i>
+      <i class="ri-sun-line ri-xl"></i>
     </a>
     <a
       v-show="themeStore.themeMode"
@@ -20,7 +20,7 @@ const themeStore = useThemeStore();
       href="#"
       class="transition ease-out"
     >
-      <i class="ri-moon-line ri-lg"></i>
+      <i class="ri-moon-line ri-xl"></i>
     </a>
   </li>
 </template>

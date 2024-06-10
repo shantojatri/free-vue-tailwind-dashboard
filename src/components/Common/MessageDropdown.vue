@@ -68,7 +68,7 @@ const messages = ref([
 <template>
   <li class="relative" ref="target">
     <a href="#" @click.prevent="dropdownStatus = !dropdownStatus">
-      <i class="ri-message-2-line ri-lg"></i>
+      <i class="ri-message-2-line ri-xl"></i>
     </a>
 
     <!-- Dropdown  -->
@@ -98,5 +98,6 @@ const messages = ref([
         </li>
       </ul>
     </div>
+    <p class="absolute inline-flex items-center justify-center w-4 h-4 text-[10px] font-normal text-white bg-red-500 rounded-full -top-2 -end-2 dark:border-gray-900">20</p>
   </li>
 </template>
