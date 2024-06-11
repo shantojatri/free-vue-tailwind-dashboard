@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
-import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
-import FacebookIcon from "@/components/Icons/FacebookIcon.vue";
-import TwitterIcon from "@/components/Icons/TwitterIcon.vue";
-import InstagramIcon from "@/components/Icons/InstagramIcon.vue";
+import Breadcrumb from "@/components/Partials/Breadcrumb.vue"; 
 </script>
 
 <template>
@@ -36,13 +33,13 @@ import InstagramIcon from "@/components/Icons/InstagramIcon.vue";
 
               <div class="flex mt-4 md:mt-6 gap-x-3">
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <FacebookIcon />
+                  <i class="ri-facebook-circle-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <TwitterIcon />
+                  <i class="ri-twitter-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <InstagramIcon />
+                  <i class="ri-instagram-fill ri-2x"></i> 
                 </a>
               </div>
             </div>
@@ -69,13 +66,13 @@ import InstagramIcon from "@/components/Icons/InstagramIcon.vue";
 
               <div class="flex mt-4 md:mt-6 gap-x-3">
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <FacebookIcon />
+                  <i class="ri-facebook-circle-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <TwitterIcon />
+                  <i class="ri-twitter-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <InstagramIcon />
+                  <i class="ri-instagram-fill ri-2x"></i> 
                 </a>
               </div>
             </div>
@@ -102,13 +99,13 @@ import InstagramIcon from "@/components/Icons/InstagramIcon.vue";
 
               <div class="flex mt-4 md:mt-6 gap-x-3">
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <FacebookIcon />
+                  <i class="ri-facebook-circle-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <TwitterIcon />
+                  <i class="ri-twitter-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <InstagramIcon />
+                  <i class="ri-instagram-fill ri-2x"></i> 
                 </a>
               </div>
             </div>
@@ -135,13 +132,13 @@ import InstagramIcon from "@/components/Icons/InstagramIcon.vue";
 
               <div class="flex mt-4 md:mt-6 gap-x-3">
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <FacebookIcon />
+                  <i class="ri-facebook-circle-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <TwitterIcon />
+                  <i class="ri-twitter-fill ri-2x"></i> 
                 </a>
                 <a href="#" class="font-medium text-gray-500 dark:text-gray-50">
-                  <InstagramIcon />
+                  <i class="ri-instagram-fill ri-2x"></i> 
                 </a>
               </div>
             </div>

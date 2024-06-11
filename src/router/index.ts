@@ -19,7 +19,21 @@ const router = createRouter({
       meta: {
         title: 'Tables',
       }
-    },    
+    },   
+    {
+      path: '/common', 
+      component: () => import('../views/common/Index.vue'),
+      children: [
+        {
+          path: 'pagination',
+          name: 'pagination', 
+          component: () => import('../views/common/Pagination.vue'),
+          meta: {
+            title: 'Pagination',
+          }
+        },  
+      ] 
+    },
     {
       path: '/charts',
       name: 'charts', 
