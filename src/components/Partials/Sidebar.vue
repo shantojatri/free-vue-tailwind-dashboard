@@ -34,7 +34,7 @@ const sidebarMenus = ref([
         path: "#",
         submenu: true,
         children: [
-          { label: "Alert", path: "#" },
+          { label: "Alert", path: "/common/alert" },
           { label: "Pagination", path: "/common/pagination" },
           { label: "Spinner", path: "#" },
           { label: "Toast", path: "#" },

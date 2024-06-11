@@ -25,6 +25,14 @@ const router = createRouter({
       component: () => import('../views/common/Index.vue'),
       children: [
         {
+          path: 'alert',
+          name: 'alert', 
+          component: () => import('../views/common/Alert.vue'),
+          meta: {
+            title: 'Alert',
+          }
+        },  
+        {
           path: 'pagination',
           name: 'pagination', 
           component: () => import('../views/common/Pagination.vue'),
