@@ -100,6 +100,22 @@ const router = createRouter({
         title: 'Forget Password',
       }
     },    
+    {
+      path: '/404',
+      name: '404', 
+      component: () => import('../views/others/404.vue'),
+      meta: {
+        title: 'Page not found',
+      }
+    },    
+    {
+      path: '/500',
+      name: '500', 
+      component: () => import('../views/others/500.vue'),
+      meta: {
+        title: 'Server error',
+      }
+    },    
   ],
 
   scrollBehavior(to, from, savedPosition) {

@@ -107,7 +107,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
                   </th>
                   <td class="px-6 py-4 text-green-400">3.5K</td>
                   <td class="px-6 py-4">580</td>
-                  <td class="px-6 py-4 text-blue-400">3.2%</td>
+                  <td class="px-6 py-4 text-indigo-400">3.2%</td>
                 </tr>
                 <tr
                   class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900"
@@ -120,7 +120,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
                   </th>
                   <td class="px-6 py-4 text-green-400">4.8K</td>
                   <td class="px-6 py-4">1120</td>
-                  <td class="px-6 py-4 text-blue-400">4.2%</td>
+                  <td class="px-6 py-4 text-indigo-400">4.2%</td>
                 </tr>
                 <tr class="bg-white dark:bg-neutral-700 border-b dark:border-neutral-900">
                   <th
@@ -131,7 +131,7 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
                   </th>
                   <td class="px-6 py-4 text-green-400">1.8K</td>
                   <td class="px-6 py-4">370</td>
-                  <td class="px-6 py-4 text-blue-400">1.2%</td>
+                  <td class="px-6 py-4 text-indigo-400">1.2%</td>
                 </tr>
               </tbody>
             </table>

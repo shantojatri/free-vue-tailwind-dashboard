@@ -82,6 +82,8 @@ const sidebarMenus = ref([
         children: [
           { label: "Settings", path: "/settings" },
           { label: "Teams", path: "/teams" },
+          { label: "Error 404", path: "/404" },
+          { label: "Error 500", path: "/500" },
         ],
       },
       {
