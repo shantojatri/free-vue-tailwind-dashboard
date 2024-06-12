@@ -1,12 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import MainLayout from "@/layouts/MainLayout.vue";
 import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
 import BasicAlert from "@/components/Alert/BasicAlert.vue";
 import BorderedAlert from "@/components/Alert/BorderedAlert.vue";
-
-const closeAlertHandler = (e: any) => {
-  e.target.parentElement.classList.add("hidden");
-};
 </script>
 
 <template>

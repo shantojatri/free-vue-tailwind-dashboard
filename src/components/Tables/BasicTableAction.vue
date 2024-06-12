@@ -10,7 +10,7 @@ onClickOutside(target, () => {
   dropdownStatus.value = false;
 });
 
-const dropDownHandler = (index) => {
+const dropDownHandler = (index: any) => {
   dropdownStatus.value = true;
   dropIndex.value = index;
 }
