@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
   colorClass: {
     type: String,
@@ -10,7 +10,7 @@ defineProps({
   },
 });
 
-const closeAlertHandler = (event) => {
+const closeAlertHandler = (event: any) => {
   event.target.parentElement.classList.add("hidden");
 };
 </script>

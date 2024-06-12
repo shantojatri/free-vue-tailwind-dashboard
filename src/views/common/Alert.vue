@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
 import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
 import BasicAlert from "@/components/Alert/BasicAlert.vue";
