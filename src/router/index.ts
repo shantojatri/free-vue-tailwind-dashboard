@@ -40,6 +40,14 @@ const router = createRouter({
             title: 'Pagination',
           }
         },  
+        {
+          path: 'spinner',
+          name: 'spinner', 
+          component: () => import('../views/common/Spinner.vue'),
+          meta: {
+            title: 'Spinner',
+          }
+        },  
       ] 
     },
     {

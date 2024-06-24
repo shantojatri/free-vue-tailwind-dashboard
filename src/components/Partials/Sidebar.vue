@@ -36,9 +36,9 @@ const sidebarMenus = ref([
         children: [
           { label: "Alert", path: "/common/alert" },
           { label: "Pagination", path: "/common/pagination" },
-          { label: "Spinner", path: "#" },
+          { label: "Spinner", path: "/common/spinner" },
           { label: "Toast", path: "#" },
-          { label: "Tooltip", path: "#" },
+          // { label: "Tooltip", path: "#" },
         ],
       },
       {
@@ -127,11 +127,7 @@ const handleChildClick = (submenu: any) => {
     <div class="py-4">
       <div class="px-7">
         <RouterLink to="/">
-          <img
-            class="w-[50%]"
-            :src="Tadmin"
-            alt="t-admin"
-          />
+          <img class="w-[50%]" :src="Tadmin" alt="t-admin" />
         </RouterLink>
       </div>
 
