@@ -48,6 +48,14 @@ const router = createRouter({
             title: 'Spinner',
           }
         },  
+        {
+          path: 'toast',
+          name: 'toast', 
+          component: () => import('../views/common/Toast.vue'),
+          meta: {
+            title: 'Toast',
+          }
+        },  
       ] 
     },
     {

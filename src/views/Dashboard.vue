@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
 import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
+import BarChart from "@/components/Charts/BarChart.vue";
+import PieChart from "@/components/Charts/PieChart.vue"; 
+import PolarChart from "@/components/Charts/PolarChart.vue";
 </script>
 
 <template>
@@ -71,6 +74,24 @@ import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
       </div>
     </div>
     <!-- Top Analytics Ends /.-->
+
+    <div class="grid grid-cols-1 gap-10 mt-8">
+      <div>
+        <!-- Bar chart -->
+        <BarChart />
+      </div> 
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-8">
+      <div>
+        <!-- Pie chart -->
+        <PieChart />
+      </div>
+      <div>
+        <!-- Polar chart -->
+        <PolarChart />
+      </div>
+    </div>
 
     <!-- Bottom Table Start -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-5 my-8">

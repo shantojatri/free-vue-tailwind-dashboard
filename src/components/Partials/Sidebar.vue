@@ -37,7 +37,7 @@ const sidebarMenus = ref([
           { label: "Alert", path: "/common/alert" },
           { label: "Pagination", path: "/common/pagination" },
           { label: "Spinner", path: "/common/spinner" },
-          { label: "Toast", path: "#" },
+          { label: "Toast", path: "/common/toast" },
           // { label: "Tooltip", path: "#" },
         ],
       },
