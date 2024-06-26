@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MainLayout from "@/layouts/MainLayout.vue";
 import Breadcrumb from "@/components/Partials/Breadcrumb.vue";
-import { useToast } from "vue-toastification";
+import { useToast, POSITION  } from "vue-toastification";
 
 const toast = useToast();
 </script>
@@ -50,21 +50,21 @@ const toast = useToast();
         </button>
 
         <button
-          @click="toast('This is default toast!', { position: 'top-center' })"
+          @click="toast('This is default toast!', { position: POSITION.TOP_CENTER })"
           class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Top Center
         </button>
 
         <button
-          @click="toast('This is default toast!', { position: 'top-left' })"
+          @click="toast('This is default toast!', { position: POSITION.TOP_LEFT })"
           class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Top left
         </button>
 
         <button
-          @click="toast('This is default toast!', { position: 'bottom-right' })"
+          @click="toast('This is default toast!', { position: POSITION.BOTTOM_RIGHT })"
           class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Bottom Right
@@ -72,7 +72,7 @@ const toast = useToast();
 
         <button
           @click="
-            toast('This is default toast!', { position: 'bottom-center' })
+            toast('This is default toast!', { position: POSITION.BOTTOM_CENTER })
           "
           class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
@@ -80,7 +80,7 @@ const toast = useToast();
         </button>
 
         <button
-          @click="toast('This is default toast!', { position: 'bottom-left' })"
+          @click="toast('This is default toast!', { position: POSITION.BOTTOM_LEFT })"
           class="text-white bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:outline-none focus:ring-indigo-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-indigo-600 dark:hover:bg-indigo-700 dark:focus:ring-indigo-800"
         >
           Bottom Left
